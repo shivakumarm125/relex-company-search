@@ -1,0 +1,22 @@
+<div class="main-class">
+    <div class="detail">
+
+    <div class="heading">{{companyDetails.title}} - Officers</div>
+        Company Number <b>{{companyDetails.company_number}}</b>
+    </div>
+    <div *ngIf="loading">Loading...</div>
+    <div *ngIf="error">{{ error }}</div>
+
+    <div *ngIf="results.length > 0 && !loading">
+    <div class="officers-details">
+        <div *ngFor="let company of results" class="each-officers">
+          <div><b>{{company.name}}</b></div>
+          <div>{{company.officer_role}}</div>
+        </div>
+    </div>
+</div>
+
+    <div *ngIf="results.length === 0 && !loading">
+        <p>No results found.</p>
+      </div>
+</div>

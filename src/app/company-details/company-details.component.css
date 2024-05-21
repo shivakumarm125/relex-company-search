@@ -1,0 +1,22 @@
+.office-list{
+    color: blue;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.office-list:hover{
+    cursor: pointer;
+}
+
+.main-class{
+    margin: 30px 30px;
+}
+
+.detail{
+    margin-top: 20px;
+}
+
+.heading{
+    font-size: 22px;
+}

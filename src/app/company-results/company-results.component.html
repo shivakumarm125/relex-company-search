@@ -1,0 +1,20 @@
+<div class="company-results">
+    <h2>SEARCH RESULTS for "{{ query }}"</h2>
+  
+    <div *ngIf="loading">Loading...</div>
+    <div *ngIf="error">{{ error }}</div>
+  
+    <div *ngIf="results.length > 0 && !loading">
+      <div class="company-details">
+        <div *ngFor="let company of results" class="each-company">
+          <div class="company-title" (click)="showCompanies(company.links.self, company)"> {{ company.title }} </div>
+          {{company.description}}
+          <div>{{company.address_snippet}}</div>
+        </div>
+    </div>
+    </div>
+    <div *ngIf="results.length === 0 && query && !loading">
+      <p>No results found.</p>
+    </div>
+  </div>
+  

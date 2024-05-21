@@ -1,0 +1,21 @@
+.company-title{
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.company-title:hover{
+    cursor: pointer;
+}
+
+.company-details{
+    margin-left: 15px;
+}
+
+.each-company{
+    margin-top: 20px;
+}
+
+.company-results{
+    margin-left: 10px;
+}

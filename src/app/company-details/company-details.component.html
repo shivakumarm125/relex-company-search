@@ -1,0 +1,25 @@
+<div class="main-class">
+    <div class="detail">
+        <div class="heading">{{companyDetails.title}}</div>
+        Company Number <b>{{companyDetails.company_number}}</b>
+    </div>
+    <div class="detail">
+        Registered Office address: <br>
+        <b>{{companyDetails.address_snippet}}</b>
+    </div>
+    <div class="detail">
+        Company Status: <br>
+        <b>{{companyDetails.company_status}}</b>
+    </div>
+    <div class="detail">
+        Company Type: <br>
+        <b>{{companyDetails.company_type}}</b>
+    </div>
+    <div class="detail">
+        Incorporated on: <br>
+        <b>{{companyDetails.date_of_creation}}</b>
+    </div>
+    <div class="office-list" (click)="showoffice(companyDetails.company_number)">
+        List Officers
+    </div>
+</div>
